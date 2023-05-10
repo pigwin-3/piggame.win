@@ -2,49 +2,7 @@
 <html>
 <head>
 	<title>Piggy Website</title>
-	<style>
-		body {
-			background-image: url(pig-background.gif);
-			background-repeat: repeat;
-            font-family: Arial, sans-serif;
-		}
-
-		.container {
-            display: inline-block;
-			width: 650px;
-			margin: 0 auto;
-			background-color: #FFFFFF;
-			border: 1px solid #000000;
-			padding: 10px;
-		}
-
-		.banner {
-			margin: 10px 0;
-		}
-
-		.sidebar {
-			width: 150px;
-			float: left;
-			background-color: #FFC0CB;
-			padding: 5px;
-		}
-
-		.content {
-			width: 480px;
-			float: right;
-			padding: 5px;
-            background-color: #FFFFFF;
-		}
-
-		.useless {
-			background-color: #FFFF00;
-			border: 1px solid #000000;
-			padding: 5px;
-			text-align: center;
-			margin-top: 10px;
-		}
-
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="container">
