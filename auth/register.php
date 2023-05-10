@@ -1,5 +1,5 @@
 <?php
-require '../../tools/database.php';
+require '../config.php';
 
 // Sjekker om dataene ble sendt
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {

@@ -2,7 +2,7 @@
 // Må legge til sjekk for om kontoen er aktivert eller ikke
 
 session_start();
-require '../../tools/database.php';
+require '../config.php';
 
 // Sjekker om dataene er tilstede
 if (!isset($_POST['username'], $_POST['password'])) {

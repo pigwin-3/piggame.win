@@ -4,6 +4,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+footer {
+    margin-top: 56px;
+}
+
 .container {
     display: inline-block;
     width: 650px;
