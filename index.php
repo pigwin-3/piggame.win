@@ -12,10 +12,11 @@
 		<div class="sidebar">
 			<h3>Useless Sidebar</h3>
 			<ul>
-				<li><a href="#">home</a></li>
-				<li><a href="fun-facts.html">fun facts</a></li>
-				<li><a href="pig-movies.html">pig movies</a></li>
-				<li><a href="link-3.html">Link 3</a></li>
+				<li><a href="index.php">home</a></li>
+				<li><a href="fun-facts.php">fun facts</a></li>
+				<li><a href="pig-movies.php">pig movies</a></li>
+				<li><a href="link-3.php">Link 3</a></li>
+				<li><a href="profile.php">profile</a></li>
 			</ul>
 			<div class="useless">
 				<h3>Fun fact of every day:</h3>

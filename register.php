@@ -1,22 +1,7 @@
-<?php
-session_start();
-if (!isset($_SESSION['loggedin'])) {
-	header('Location: login.php');
-	exit;
-}
-
-require 'config.php';
-$stmt = $con->prepare('SELECT email, perm, created FROM accounts WHERE id = ?');
-$stmt->bind_param('i', $_SESSION['id']);
-$stmt->execute();
-$stmt->bind_result($email, $permistion, $created);
-$stmt->fetch();
-$stmt->close();
-?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>you</title>
+	<title>deg</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -27,10 +12,10 @@ $stmt->close();
 		<div class="sidebar">
 			<h3>Useless Sidebar</h3>
 			<ul>
-				<li><a href="index.php">home</a></li>
-				<li><a href="fun-facts.php">fun facts</a></li>
-				<li><a href="pig-movies.php">pig movies</a></li>
-				<li><a href="link-3.php">Link 3</a></li>
+				<li><a href="#">home</a></li>
+				<li><a href="fun-facts.html">fun facts</a></li>
+				<li><a href="pig-movies.html">pig movies</a></li>
+				<li><a href="link-3.html">Link 3</a></li>
 				<li><a href="profile.php">profile</a></li>
 			</ul>
 			<div class="useless">
@@ -40,20 +25,23 @@ $stmt->close();
             <!-- get a hits counter for this site to <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpiggame.win&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
 		</div>
 		<div class="content">
-			<h1>profile</h1>
-			<p>name: <?=$_SESSION['name']?></p>
-			<p>email: <?=$email?></p>
-			<p>permsitionlevel: <?=$permistion?></p>
-			<p>created: <?=$created?> (yyyy/mm/dd)</p>
-			<a href="auth/logout.php">log out</a>
-			<br>
-			<?php
-			if($permistion >= 1) {
-				echo '<a href="admin/">admin page</a>';
-			}
-			?>
-			<br>
-			<a href="suggest.php">suggest fun fact of the day</a>
+			<h1>register</h1>
+			<form method="post" action="register.php">
+				<label for="username">Username:</label><br>
+				<input type="text" id="username" name="username" required><br>
+
+				<label for="password">password:</label><br>
+				<input type="password" id="password" name="password" required><br>
+
+				<label for="password2">Comfirm password:</label><br>
+				<input type="password" id="password2" name="password2" required><br>
+
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" required><br><br>
+
+				<input type="submit" value="Registrer">
+			</form><br>
+			<a href="login.php">allready have a account!</a><br>
 			<footer>
                 <small>&copy; 2023 Piggame. No Rights Reserved.</small>
             </footer>
