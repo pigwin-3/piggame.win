@@ -29,7 +29,7 @@ require 'config.php';
             <!-- get a hits counter for this site to <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpiggame.win&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
 		</div>
 		<div class="content">
-			<h1>suggest here:</h1>
+			<h1>suggest a new fun fact here:</h1>
             <form action="" method="post">
                 <input type="text" name="fact" id="fact">
                 <input type="submit" value="submit">
@@ -57,7 +57,7 @@ require 'config.php';
 				}
 			}
 			else {
-				echo "<p>log in to sugest facts!</p>";
+				echo "<h2>log in to sugest facts!</h2>";
 			}
             ?>
 		</div>
