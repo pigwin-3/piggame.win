@@ -33,6 +33,7 @@ if($perm <= 0) {
 		</div>
 		<div>
             <h1>settings</h1>
+            <a href="index.php">back</a>
             <?php
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // henter post daten

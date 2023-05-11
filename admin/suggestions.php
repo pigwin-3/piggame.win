@@ -33,6 +33,7 @@ if($perm <= 0) {
 		</div>
 		<div>
             <h1>sugestions</h1>
+            <a href="index.php">back</a>
             <h3>
             <?php
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
